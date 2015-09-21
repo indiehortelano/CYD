@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "coloryourday.indie.com.app"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable false
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.0'
+
+    //-- sliding view pager
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+
+    //-- roboguice for dependency injection
+    compile 'org.roboguice:roboguice:3.+'
+    provided 'org.roboguice:roboblender:3.+'
+
+    //-----Active Android for ORM-----
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+
+    //-- Recyclerview support
+    compile 'com.android.support:recyclerview-v7:22.0.0'
+
+}

@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <color name="item_divider_color">#8C8F8F</color>
+
+    <color name="cyd_green">#339933</color>
+    <color name="cyd_yellow_green">#66ff33</color>
+    <color name="cyd_yellow">#ffff00</color>
+    <color name="cyd_orange">#ff6600</color>
+    <color name="cyd_red">#cc0000</color>
+
+    <color name="cyd_black">#000000</color>
+
+</resources>

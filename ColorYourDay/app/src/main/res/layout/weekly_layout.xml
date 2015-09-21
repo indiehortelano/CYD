@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="center"
+    android:weightSum="7"
+    android:id="@+id/dailyLayout"
+    android:orientation="horizontal"
+    android:divider="@color/cyd_black"
+    android:showDividers="middle">
+
+    <View
+        android:id="@+id/monday"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:id="@+id/tuesday"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/wednesday"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/thursday"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/friday"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/saturday"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/sunday"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
